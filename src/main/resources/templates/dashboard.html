@@ -32,8 +32,11 @@
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
       <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
       
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      
       <ul class="navbar-nav px-3">
+      	<li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">User Name</a>
+        </li>
         <li class="nav-item text-nowrap">
           <a class="nav-link" href="#">Sign out</a>
         </li>
@@ -43,42 +46,57 @@
     <div class="container-fluid">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
+          <div class="sidebar-sticky" id="pills-tab" role="tablist">
+          
+            <ul class="nav flex-column" >
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true" href="#pills-home">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" data-toggle="collapse" href="#collapseOrder" aria-expanded="false" aria-controls="collapseOrder">
                   <span data-feather="file"></span>
-                  Orders
+                  Purchase
                 </a>
+                <div class="collapse" id="collapseOrder">
+	                <ul class="nav flex-column">
+	                	<li class="nav-item">
+		                	<a class="nav-link ml-4" id="pills-purchase1-tab" data-toggle="pill" role="tab" aria-controls="purchase-tabpanel" aria-selected="false" href="#pills-purchase1">
+			                  purchase-sub1
+			                </a>
+	                	</li>
+	                	<li class="nav-item">
+		                	<a class="nav-link ml-4" id="pills-purchase2-tab" data-toggle="pill" role="tab" aria-controls="purchase-tabpanel" aria-selected="false" href="#pills-purchase2">
+			                  purchase-sub2
+			                </a>
+		                </li>
+	                </ul>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" id="pills-sale-tab" data-toggle="pill" role="tab" aria-controls="pills-sale" aria-selected="false" href="#pills-sale">
                   <span data-feather="shopping-cart"></span>
-                  Products
+                  Sale
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="users"></span>
-                  Customers
+                  Inventory
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="bar-chart-2"></span>
-                  Reports
+                  HR
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="layers"></span>
-                  Integrations
+                  Manage
                 </a>
               </li>
             </ul>
