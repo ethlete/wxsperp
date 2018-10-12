@@ -11,8 +11,9 @@ public class Product extends BasicDomain implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private String code;
-	
 	private String name;
+	
+	
 
 	public String getCode() {
 		return code;
